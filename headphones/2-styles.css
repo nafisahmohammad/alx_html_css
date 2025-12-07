@@ -1,0 +1,133 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --primary-color: #FF6565;
+    --max-width: 1000px;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER / HERO */
+.hero {
+    background: url("images/headphones_hero.jpg") center/cover no-repeat;
+    color: white;
+    padding: 40px 0 120px;
+    text-align: center;
+}
+
+/******** NAVIGATION ********/
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.nav a:hover,
+.nav a:active {
+    color: var(--primary-color);
+}
+
+/* Mobile Menu Button */
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+}
+
+/******** HERO CONTENT ********/
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin: 40px 0 10px;
+}
+/******** OUR RESULTS ********/
+.our-results {
+    background: url("images/headphones-results.jpg") center/cover no-repeat;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+.our-results h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.our-results > p {
+    max-width: 650px;
+    margin: 0 auto 60px;
+}
+
+.results-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.result {
+    width: 200px;
+}
+
+.circle {
+    width: 160px;
+    height: 160px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+}
+
+.circle h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/******** MOBILE ********/
+@media screen and (max-width: 480px) {
+    .results-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .result {
+        width: 100%;
+        max-width: 260px;
+    }
+}

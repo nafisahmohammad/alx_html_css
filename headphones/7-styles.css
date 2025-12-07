@@ -1,0 +1,16 @@
+/* Animate What we do features */
+.feature {
+    transition: transform .3s, opacity .3s;
+}
+.feature:hover {
+    transform: translateY(-10px) scale(1.05);
+    opacity: .9;
+}
+
+/* Animate pentagon results */
+.pentagon {
+    transition: transform .4s ease-in-out;
+}
+.pentagon:hover {
+    transform: rotate(8deg) scale(1.1);
+}

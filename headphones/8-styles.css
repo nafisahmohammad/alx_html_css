@@ -1,0 +1,22 @@
+.nav {
+    display: flex;
+}
+
+@media screen and (max-width: 480px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        background: #071629;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
